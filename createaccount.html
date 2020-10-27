@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.innerHTML == "Create ACCOUNT") {
+            x.innerHTML = "text!";
+            } else {
+            x.innerHTML = "Swapped text!";
+            }
+            }
+        </script>
+        <style>
+          .alert {
+                  padding: 20px;
+                  background-color: #f44336;
+                  color: white;
+                 }
+                 .closebtn {
+                      margin-left: 15px;
+                      color: white;
+                      font-weight: bold;
+                      float: right;
+                      font-size: 22px;
+                      line-height: 20px;
+                      cursor: pointer;
+                      transition: 0.3s;
+                }
+                .closebtn:hover {
+                               color: black; 
+                                 }
+              .forbg{
+                background-color: darkslategray;
+            }
+            .forh1
+            {
+                color:#e3f2fd;
+            }
+            .forc{
+                color:darkslategray;
+            }
+            .forh2
+            {
+                color: darkturquoise;
+            }
+           
+        </style>       
+    </head>
+    <body class="forbg">
+        <div class="container" class="float-right">
+            <form>
+                <BR></BR>
+                <h1 class="forh2">CREATE ACCOUNT</h1>
+                <div class="float-left" >
+                    <label for="" class="forh1">Username</label>
+                    <input type="text" class="form-control" name="" id="" placeholder="Username">
+                </div> 
+                <br>
+                <br>
+                <br> 
+                <div class="float-left" >
+                    <label for="" class="forh1">Email</label>
+                    <input type="email" class="form-control" name="" id="" placeholder="example@email.com">
+                </div> 
+                <br>
+                <br>
+                <br> 
+                <div class="float-left" >
+                    <label for="" class="forh1">Phone</label>
+                    <input type="int" class="form-control" name="" id="" placeholder="contact ">
+                </div> 
+                <br>
+                <br>
+                <br>              
+                <div class="float-left">
+                    <label for="" class="forh1">Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div> 
+                <br>
+                <br>
+                <br> 
+                <div class="float-left" >
+                    <label for="" class="forh1">Re-type password</label>
+                    <input type="password" class="form-control" name="" id="" placeholder="Re-typePassword ">
+                </div>               
+                <br>
+                <br>
+                <br>              
+                <div class="float-left">
+                    <br>
+                    <br>               
+                    <div id="myDIV"></div>   
+                   <button onclick="myFunction()" class="forc">Create Account</button>
+                        <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong>Account</strong> has been created
+                      </div>                    
+                      <a href="login.html" class="forh1">login</a>                                                
+            </div>                            
+            </form> 
+        </div>
+    </body>
+</html>
